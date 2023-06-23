@@ -11,7 +11,7 @@ $phone = get_field('phone', 'option');
 $block = new CW_Settings(
    $cw_settings = array(
       'title' => 'Get Consultation',
-      'patternTitle' => '<h2 class="fs-24 fw-normal text-white mb-4 mb-lg-0 me-lg-16 %2$s">%1$s</h2>',
+      'patternTitle' => '<h2 class="fs-24 fw-normal mb-4 mb-lg-0 me-lg-16 %2$s">%1$s</h2>',
 
       'subtitle' => 'Call Now',
       'patternSubtitle' => '<p class="mb-0 %2$s">%1$s</p>',
@@ -27,21 +27,16 @@ $block = new CW_Settings(
 ?>
 
 <section id="<?php echo esc_html($args['block_id']); ?>" class="wrapper bg-light position-relative">
-
    <div class="container">
       <div class="row py-9">
-
-         <div class="wrapper col-lg-6 h-100 position-absolute top-0 start-0 <?php echo $block->section_class; ?> <?php echo esc_html($args['block_class']); ?>" <?php echo $block->background_data; ?>></div>
-
-         <div class="col-lg-6 position-relative">
+         <div class="bg-cta wrapper col-md-6 position-absolute top-0 start-0 <?php echo $block->section_class; ?> <?php echo esc_html($args['block_class']); ?>" <?php echo $block->background_data; ?>></div>
+         <div class="col-md-6 position-relative pb-6 pb-md-0">
             <?php echo $block->subtitle_first; ?>
             <!--/subtitle -->
             <?php echo $block->title; ?>
             <!--/title -->
          </div>
-
-         <div class="col-lg-6 d-lg-flex align-items-lg-center">
-
+         <div class="col-md-6 d-lg-flex align-items-lg-center">
             <div class="col text-end">
                <div class="d-flex mb-4 mb-lg-0">
                   <div>
@@ -57,7 +52,6 @@ $block = new CW_Settings(
                      <?php elseif (get_sub_field('phone') == 'Custom') : ?>
                         <a class="fs-22 fw-normal" href="tel:<?php the_sub_field('custom_phone'); ?>"><?php the_sub_field('custom_phone'); ?></a>
                      <?php endif; ?>
-
                   </div>
                </div>
             </div>
