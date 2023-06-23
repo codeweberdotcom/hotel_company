@@ -9,5 +9,8 @@ This is the child theme for Codeweber theme, generated with Generate Child Theme
 
 (optional values you can add: Theme URI, Author URI, License, License URI, Tags, Text Domain)
 
-test
+
 */
+#faq-block_1556b8d5d0349e90b98ce08f2af3e2b8 .card {
+  border-radius: 0px !important;
+}
