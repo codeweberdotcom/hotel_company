@@ -12,7 +12,7 @@ This is the child theme for Codeweber theme, generated with Generate Child Theme
 
 */
 /* faq-block */
-#faq-block_1556b8d5d0349e90b98ce08f2af3e2b8 .card {
+.block-faq .card {
   border-radius: 0px !important;
 }
 /* cta-block */
