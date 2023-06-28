@@ -26,7 +26,7 @@ $block = new CW_Settings(
 );
 ?>
 
-<section id="<?php echo esc_html($args['block_id']); ?>" class="wrapper bg-light position-relative">
+<section id="<?php echo esc_html($args['block_id']); ?>" class="wrapper bg-light position-relative shadow-lg">
    <div class="container">
       <div class="row py-9">
          <div class="bg-cta wrapper col-md-6 position-absolute top-0 start-0 <?php echo $block->section_class; ?> <?php echo esc_html($args['block_class']); ?>" <?php echo $block->background_data; ?>></div>
