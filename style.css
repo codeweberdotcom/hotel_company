@@ -15,7 +15,10 @@ This is the child theme for Codeweber theme, generated with Generate Child Theme
   box-shadow: 0 0 1.25rem rgba(30, 34, 40, 0.06);
   background: #205081;
 }
-
+/* facts-block*/
+img.w-custom {
+  width: 1.5rem !important;
+}
 /* faq-block */
 .block-faq .card {
   border-radius: 0px !important;
