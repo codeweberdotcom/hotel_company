@@ -4,6 +4,10 @@
  * Facts hotel
  */
 
+if (get_sub_field('images')) {
+   $img_src = get_sub_field('images');
+}
+
 $block = new CW_Settings(
    $cw_settings = array(
       // 'subtitle' => 'Company Facts',
@@ -19,22 +23,24 @@ $block = new CW_Settings(
       // 'column_class_1' => '',
       // 'column_class_2' => 'order-lg-2',
 
-      'features' => '<div class="col-md-3"><img src="' . get_template_directory_uri() . '/dist/img/icons/lineal/check.svg" class="svg-inject icon-svg icon-svg-lg text-primary mb-3" alt="" /><h3 class="counter">7518</h3><p class="mb-0">Completed Projects</p></div><!--/column -->',
-      'features_pattern' => '<div class="col-md-3 %1$s">%2$s<div class="h3 counter">%3$s</div><p class="mb-0">%4$s</p></div><!--/column -->',
-      'features_style_icon' => 'mb-3'
+      'features' => '<div class="col-md-3"><div class="d-flex flex-row"><div><img src="' . get_template_directory_uri() . '/dist/img/icons/lineal/target.svg" class="svg-inject icon-svg icon-svg-sm text-aqua me-4" alt="" /></div><div><h4 class="mb-1">Fitness Goal</h4><p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p></div></div></div><!--/column -->',
+      'features_pattern' => '<div class="col-md-3 %1$s"><div class="d-flex flex-row %6$s"><div>%2$s</div><div>%3$s %4$s %5$s</div></div></div><!--/column -->',
+      'features_style_icon' => 'me-0 w-5',
+      'feature_pattern_title' => '<div class="h3 counter %2$s">%1$s</div>',
+      'feature_pattern_paragraph' => '<p class="mb-0 %2$s">%1$s</p>',
    )
 );
 ?>
 
 <section id="<?php echo esc_html($args['block_id']); ?>" class="<?php echo $block->section_class; ?> <?php echo esc_html($args['block_class']); ?>" <?php echo $block->background_data; ?>>
-   <div class="container py-14 py-md-16">
+   <div class="container py-9 py-md-11">
       <div class="row align-items-center">
-         <div class="col-lg-2 text-center mb-6 text-lg-right mb-lg-0">
-            <?php echo codeweber_logo('dark', NULL, NULL); ?>
+         <div class="col-lg-2 mb-6 mb-lg-0">
+            <figure class="px-3 px-md-0 px-xxl-2"> <img src="<?php echo $img_src; ?>" alt="" /></figure>
          </div>
          <!-- /column -->
          <div class="col-lg-10">
-            <div class="row align-items-center counter-wrapper gy-6 text-center">
+            <div class="row align-items-center counter-wrapper gy-6">
                <?php echo $block->features; ?>
                <!--/features -->
             </div>
