@@ -16,6 +16,9 @@ This is the child theme for Codeweber theme, generated with Generate Child Theme
   background: #205081;
 }
 /* facts-block*/
+.facts_hotel figure img {
+  width: unset !important;
+}
 img.w-custom {
   width: 1.5rem !important;
 }
