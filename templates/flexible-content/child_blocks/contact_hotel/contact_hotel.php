@@ -43,7 +43,7 @@ $block = new CW_Settings(
 <section id="<?php echo esc_html($args['block_id']); ?>" class="<?php echo $block->section_class; ?> <?php echo esc_html($args['block_class']); ?>" <?php echo $block->background_data; ?>>
    <div class="container py-14 py-md-16">
       <div class="row">
-         <div class="col-xl-10 mx-auto <?php echo $class_cust; ?>">
+         <div class="col-12 mx-auto <?php echo $class_cust; ?>">
             <div class="card rounded-0">
                <div class="row gx-0">
                   <div class="col-lg-6 image-wrapper bg-image bg-cover d-none d-md-block" data-image-src="<?php echo $bg_image; ?> <?php echo $block->column_class_1; ?>">
