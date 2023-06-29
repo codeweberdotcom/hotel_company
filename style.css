@@ -19,8 +19,11 @@ This is the child theme for Codeweber theme, generated with Generate Child Theme
 .facts_hotel figure img {
   width: unset !important;
 }
-img.w-custom {
-  width: 1.5rem !important;
+
+.facts_hotel .d-flex.flex-row.align-items-center {
+  border-left: 3px solid #21262c3d;
+  height: 40px;
+  padding-left: 20px;
 }
 /* faq-block */
 .block-faq .card {
