@@ -11,7 +11,7 @@ $phone = get_field('phone', 'option');
 $block = new CW_Settings(
    $cw_settings = array(
       'title' => 'Get Consultation',
-      'patternTitle' => '<h2 class="fs-24 fw-normal mb-4 mb-lg-0 me-lg-16 %2$s">%1$s</h2>',
+      'patternTitle' => '<h2 class="fs-24 fw-normal mb-9 mb-md-0 me-lg-16 %2$s">%1$s</h2>',
 
       'subtitle' => 'Call Now',
       'patternSubtitle' => '<p class="lh-1 mb-0 %2$s">%1$s</p>',
@@ -30,15 +30,15 @@ $block = new CW_Settings(
    <div class="container">
       <div class="row py-9">
          <div class="bg-cta wrapper col-md-7 position-absolute top-0 start-0 <?php echo $block->section_class; ?> <?php echo esc_html($args['block_class']); ?>" <?php echo $block->background_data; ?>></div>
-         <div class="col-md-7 position-relative pb-6 pb-md-0">
+         <div class="col-md-7 mb-9 mb-md-0 zindex-1 d-flex align-items-center">
             <?php echo $block->subtitle_first; ?>
             <!--/subtitle -->
             <?php echo $block->title; ?>
             <!--/title -->
          </div>
-         <div class="col-md-5 d-flex flex-wrap  align-items-lg-center justify-content-md-end">
+         <div class="col-md-5 d-flex flex-wrap align-items-lg-center justify-content-md-end">
 
-            <div class="text-md-end me-md-3 mb-3 mb-xl-0">
+            <div class="text-md-end me-3 mb-3 mb-xl-0">
                <?php echo $block->subtitle_second; ?>
                <!--/subtitle -->
                <?php if (get_sub_field('phone') == 'Option page') : ?>
