@@ -11,7 +11,7 @@ $phone = get_field('phone', 'option');
 $block = new CW_Settings(
    $cw_settings = array(
       'title' => 'Get Consultation',
-      'patternTitle' => '<h2 class="fs-24 lh-1 fw-normal mb-4 mb-lg-0 me-lg-16 %2$s">%1$s</h2>',
+      'patternTitle' => '<h2 class="fs-24 fw-normal mb-4 mb-lg-0 me-lg-16 %2$s">%1$s</h2>',
 
       'subtitle' => 'Call Now',
       'patternSubtitle' => '<p class="lh-1 mb-0 %2$s">%1$s</p>',
