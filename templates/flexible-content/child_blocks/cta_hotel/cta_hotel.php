@@ -38,7 +38,7 @@ $block = new CW_Settings(
          </div>
          <div class="col-md-5 d-flex flex-wrap align-items-lg-center justify-content-md-end">
 
-            <div class="text-md-end me-3 mb-3 mb-xl-0">
+            <div class="text-md-end me-3 me-lg-9 mb-3 mb-xl-0">
                <?php echo $block->subtitle_second; ?>
                <!--/subtitle -->
                <?php if (get_sub_field('phone') == 'Option page') : ?>
