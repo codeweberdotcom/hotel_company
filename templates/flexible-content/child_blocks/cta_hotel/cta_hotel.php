@@ -11,7 +11,7 @@ $phone = get_field('phone', 'option');
 $block = new CW_Settings(
    $cw_settings = array(
       'title' => 'Get Consultation',
-      'patternTitle' => '<h2 class="fs-24 fw-normal mb-9 mb-md-0 me-lg-16 %2$s">%1$s</h2>',
+      'patternTitle' => '<h2 class="fs-24 fw-normal mb-0 me-lg-16 %2$s">%1$s</h2>',
 
       'subtitle' => 'Call Now',
       'patternSubtitle' => '<p class="lh-1 mb-0 %2$s">%1$s</p>',
@@ -28,17 +28,16 @@ $block = new CW_Settings(
 
 <section id="<?php echo esc_html($args['block_id']); ?>" class="wrapper bg-light position-relative shadow-lg">
    <div class="container">
-      <div class="row py-9">
+      <div class="row">
          <div class="bg-cta wrapper col-md-7 position-absolute top-0 start-0 <?php echo $block->section_class; ?> <?php echo esc_html($args['block_class']); ?>" <?php echo $block->background_data; ?>></div>
-         <div class="col-md-7 mb-9 mb-md-0 zindex-1 d-flex align-items-center">
+         <div class="col-md-7 py-9 zindex-1 d-flex align-items-center">
             <?php echo $block->subtitle_first; ?>
             <!--/subtitle -->
             <?php echo $block->title; ?>
             <!--/title -->
          </div>
-         <div class="col-md-5 d-flex flex-wrap align-items-lg-center justify-content-md-end">
-
-            <div class="text-md-end me-3 me-lg-9 mb-3 mb-xl-0">
+         <div class="col-md-5 py-9 d-flex flex-wrap align-items-lg-center justify-content-end">
+            <div class="text-end mb-3 mb-xl-0">
                <?php echo $block->subtitle_second; ?>
                <!--/subtitle -->
                <?php if (get_sub_field('phone') == 'Option page') : ?>
@@ -51,7 +50,7 @@ $block = new CW_Settings(
                   </div>
                <?php endif; ?>
             </div>
-            <div class="justify-content-md-end">
+            <div class="justify-content-end ms-5">
                <?php echo $block->buttons; ?>
                <!--/buttons group -->
             </div>
