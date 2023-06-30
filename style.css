@@ -43,7 +43,7 @@ footer.bg-dark {
 }
 /* cta-block */
 .bg-cta {
-  height: 50%;
+  height: 45%;
 }
 
 @media (min-width: 768px) {

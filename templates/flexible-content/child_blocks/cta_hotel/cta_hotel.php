@@ -29,14 +29,14 @@ $block = new CW_Settings(
 <section id="<?php echo esc_html($args['block_id']); ?>" class="wrapper bg-light position-relative shadow-lg">
    <div class="container">
       <div class="row">
-         <div class="bg-cta wrapper col-md-7 position-absolute top-0 start-0 <?php echo $block->section_class; ?> <?php echo esc_html($args['block_class']); ?>" <?php echo $block->background_data; ?>></div>
-         <div class="col-md-7 py-9 zindex-1 d-flex align-items-center">
+         <div class="bg-cta wrapper col-md-6 position-absolute top-0 start-0 <?php echo $block->section_class; ?> <?php echo esc_html($args['block_class']); ?>" <?php echo $block->background_data; ?>></div>
+         <div class="col-md-6 py-9 zindex-1 d-flex align-items-center">
             <?php echo $block->subtitle_first; ?>
             <!--/subtitle -->
             <?php echo $block->title; ?>
             <!--/title -->
          </div>
-         <div class="col-md-5 py-9 d-flex flex-wrap align-items-lg-center justify-content-end">
+         <div class="col-md-6 py-9 d-flex flex-wrap align-items-lg-center justify-content-end">
             <div class="text-end mb-3 mb-xl-0">
                <?php echo $block->subtitle_second; ?>
                <!--/subtitle -->
