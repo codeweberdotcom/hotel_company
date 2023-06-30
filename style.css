@@ -10,6 +10,11 @@ This is the child theme for Codeweber theme, generated with Generate Child Theme
 (optional values you can add: Theme URI, Author URI, License, License URI, Tags, Text Domain)
 */
 
+/* services hero banner */
+.banner-services .swiper-hero, .banner-services .swiper-hero .swiper-slide {
+  height: 450px !important;
+}
+
 /* sticky header */
 .navbar.navbar-expand-lg.classic.navbar-dark.navbar-clone.fixed.navbar-stick {
   box-shadow: 0 0 1.25rem rgba(30, 34, 40, 0.06);
