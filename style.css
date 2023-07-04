@@ -23,7 +23,16 @@ This is the child theme for Codeweber theme, generated with Generate Child Theme
 }
 /* contact block */
 .rounded-0 > .card {
-  border-radius: 0!important;
+  border-radius: 0 !important;
+}
+.rounded-0 > .card .bg-image {
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+}
+
+/* CF7 */
+#floatingTextarea .message-height {
+  height: 100px !important;
 }
 
 /* footer */
