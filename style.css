@@ -31,8 +31,8 @@ This is the child theme for Codeweber theme, generated with Generate Child Theme
 }
 
 /* CF7 */
-#floatingTextarea .message-height {
-  height: 100px !important;
+#floatingTextarea.message-height {
+  height: 150px !important;
 }
 
 /* footer */
