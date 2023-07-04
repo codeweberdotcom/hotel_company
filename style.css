@@ -23,7 +23,7 @@ This is the child theme for Codeweber theme, generated with Generate Child Theme
 }
 /* contact block */
 .rounded-0 > .card {
-  border-radius: 0;
+  border-radius: 0!important;
 }
 
 /* footer */
