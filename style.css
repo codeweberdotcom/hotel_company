@@ -21,6 +21,10 @@ This is the child theme for Codeweber theme, generated with Generate Child Theme
   box-shadow: 0 0 1.25rem rgba(30, 34, 40, 0.06);
   background: #0d325e;
 }
+/* contact block */
+.rounded-0 > .card {
+  border-radius: 0;
+}
 
 /* footer */
 footer.bg-dark {
