@@ -426,6 +426,27 @@
                             "endpoint": 0
                         },
                         {
+                            "key": "field_64a3c2d898662",
+                            "label": "Title",
+                            "name": "cw_title",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "field_6383ec1d68ff4"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
                             "key": "field_649aaf8d8480b",
                             "label": "Contact form",
                             "name": "contact_form",
@@ -558,5 +579,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1687938966
+    "modified": 1688453939
 }

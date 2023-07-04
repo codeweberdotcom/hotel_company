@@ -29,6 +29,8 @@ if ($contact_form) {
 
 $block = new CW_Settings(
    $cw_settings = array(
+      'title' => 'Get Consultation',
+      'patternTitle' => '<h2 class="display-4 mb-3 %2$s">%1$s</h2>',
 
       'background_class_default' => 'wrapper bg-light',
       'divider' => true,
@@ -51,6 +53,8 @@ $block = new CW_Settings(
                   <!--/column -->
                   <div class="col-lg-6 <?php echo $block->column_class_2; ?>">
                      <div class="p-6 p-md-6 p-lg-10">
+                        <?php echo $block->title; ?>
+                        <!--/title -->
                         <?php echo $cf_form; ?>
                         <!-- /form -->
                         <!--/div -->
